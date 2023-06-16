@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>
+      Frontend Mentor | Newsletter sign-up form with success message
+    </title>
+    <!-- CSS STYLESHEET -->
+    <link rel="stylesheet" href="output.css" />
+
+    <!-- JAVSCRIPT FILE -->
+    <script defer src="script.js"></script>
+  </head>
+  <body
+    class="md:bg-darkSlateGrey flex items-center min-h-screen justify-center"
+  >
+    <!-- Sign-up form start -->
+    <main
+      id="main-section"
+      class="container mx-auto md:max-w-3xl bg-white flex flex-col md:flex-row md:items-center md:justify-center md:rounded-3xl md:px-4"
+    >
+      <picture class="md:hidden">
+        <img
+          src="images/illustration-sign-up-mobile.svg"
+          alt="the 94 number in a red circle in front of an ipad screen"
+        />
+      </picture>
+      <section class="p-6 md:p-9">
+        <section>
+          <h1
+            class="text-3xl font-bold text-darkSlateGrey my-3 md:text-5xl md:font-medium"
+          >
+            Stay updated!
+          </h1>
+          <p class="my-4 text-charcoalGrey md:text-sm md:my-5">
+            Join 60,000+ product managers receiving monthly updates on:
+          </p>
+        </section>
+        <section class="mt-7 md:mt-3">
+          <div class="flex gap-4 my-2.5 md:my-3">
+            <picture>
+              <img
+                src="images/icon-list.svg"
+                alt="a white tick mark in an orange circular background"
+              />
+            </picture>
+            <p class="text-charcoalGrey md:text-sm">
+              Product discovery and building what matters
+            </p>
+          </div>
+          <div class="flex gap-4 my-2.5 md:my-3">
+            <picture>
+              <img
+                src="images/icon-list.svg"
+                alt="a white tick mark in an orange circular background"
+              />
+            </picture>
+            <p class="text-charcoalGrey md:text-sm">
+              Measuring to ensure updates are a success
+            </p>
+          </div>
+          <div class="flex gap-4 my-2.5 md:my-3">
+            <picture>
+              <img
+                src="images/icon-list.svg"
+                alt="a white tick mark in an orange circular background"
+              />
+            </picture>
+            <p class="text-charcoalGrey md:text-sm">And much more!</p>
+          </div>
+        </section>
+        <section class="flex justify-between mt-8 md:mt-5">
+          <h2 class="text-darkSlateGrey font-bold">Email address</h2>
+          <span id="error-text" class="text-xs text-tomato md:mr-5 hidden"
+            >Valid email required</span
+          >
+        </section>
+        <section class="mt-1">
+          <form>
+            <input
+              class="border-2 border-grey w-full p-3 outline-grey rounded-lg pl-4 cursor-pointer md:w-[95%]"
+              type="email"
+              name="email"
+              aria-label="Email address"
+              id="email-input"
+              placeholder="email@company.com"
+            />
+
+            <button
+              id="btn"
+              class="bg-darkSlateGrey p-3 text-white w-full my-6 rounded-lg font-semibold md:w-[95%] md:my-5 hover:bg-tomato"
+            >
+              Subscribe to monthly newsletter
+            </button>
+          </form>
+        </section>
+      </section>
+      <picture class="hidden md:block">
+        <img
+          src="images/illustration-sign-up-desktop.svg"
+          alt="the 94 number in a red circle in front of an ipad screen"
+        />
+      </picture>
+    </main>
+    <!-- Sign-up form end -->
+
+    <!-- Success message start -->
+    <section
+      id="subscribed-section"
+      class="flex flex-col items-center justify-center gap-60 p-6 bg-white max-w-sm md:gap-0 md:rounded-3xl md:px-10 hidden"
+    >
+      <section>
+        <img class="mt-20 mb-8 md:mt-0" src="images/icon-success.svg" alt="" />
+        <h1
+          class="text-3xl font-bold text-darkSlateGrey my-5 md:text-5xl md:font-medium"
+        >
+          Thanks for <span class="block">subscribing!</span>
+        </h1>
+        <p class="md:text-xs md:leading-5">
+          A confirmation email has been sent to
+          <span class="font-bold text-darkSlateGrey"
+            >ash@loremcompany.com.</span
+          >
+          Please open it and click the button inside to confirm your
+          subscription.
+        </p>
+      </section>
+      <button
+        id="dismiss-btn"
+        class="bg-darkSlateGrey p-3 text-white w-full my-6 rounded-lg font-semibold hover:shadow-lg hover:shadow-red-600 hover:bg-tomato"
+      >
+        Dismiss message
+      </button>
+    </section>
+
+    <!-- Success message end -->
+  </body>
+</html>
