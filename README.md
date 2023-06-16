@@ -37,8 +37,8 @@ Users should be able to:
 
 ### Links
 
-- [My Solution]()
-- [Live Site URL]()
+- [My Solution](https://www.frontendmentor.io/challenges/newsletter-signup-form-with-success-message-3FC1AZbNrv/hub)
+- [Live Site URL](https://mike-dave.github.io/newsletter-sign-up/)
 
 ## My process
 
