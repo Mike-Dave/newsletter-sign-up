@@ -4,6 +4,7 @@ const emailInput = document.getElementById("email-input");
 const btn = document.getElementById("btn");
 const mainSection = document.getElementById("main-section");
 const subscribedSection = document.getElementById("subscribed-section");
+const emailOnSub = document.getElementById("email-on-sub");
 const errorText = document.getElementById("error-text");
 const dismissBtn = document.getElementById("dismiss-btn");
 
@@ -16,14 +17,13 @@ btn.addEventListener("click", (e) => {
   if (emailRegex.test(emailInputValue)) {
     mainSection.classList.add("hidden");
     subscribedSection.classList.remove("hidden");
+    emailOnSub.innerHTML = `${emailInputValue}`;
   } else {
     errorText.classList.remove("hidden");
     emailInput.classList.add("error-email-outline");
-    emailInput.setAttribute("placeholder", "ash#loremcompany.com");
+    // emailInput.setAttribute("placeholder", `${emailInputValue}`);
   }
 });
-
-// macdevis26@gmail.com
 
 emailInput.addEventListener("keydown", (e) => {
   errorText.classList.add("hidden");

@@ -22,7 +22,7 @@
     <script defer src="script.js"></script>
   </head>
   <body
-    class="md:bg-darkSlateGrey flex items-center min-h-screen justify-center"
+    class="md:bg-darkSlateGrey flex items-center md:min-h-screen justify-center"
   >
     <!-- Sign-up form start -->
     <main
@@ -31,6 +31,7 @@
     >
       <picture class="md:hidden">
         <img
+          class="w-full"
           src="images/illustration-sign-up-mobile.svg"
           alt="the 94 number in a red circle in front of an ipad screen"
         />
@@ -120,7 +121,11 @@
       class="flex flex-col items-center justify-center gap-60 p-6 bg-white max-w-sm md:gap-0 md:rounded-3xl md:px-10 hidden"
     >
       <section>
-        <img class="mt-20 mb-8 md:mt-0" src="images/icon-success.svg" alt="" />
+        <img
+          class="mt-20 mb-8 md:mt-0"
+          src="images/icon-success.svg"
+          alt="the 94 number in a red circle in front of an ipad screen"
+        />
         <h1
           class="text-3xl font-bold text-darkSlateGrey my-5 md:text-5xl md:font-medium"
         >
@@ -128,7 +133,7 @@
         </h1>
         <p class="md:text-xs md:leading-5">
           A confirmation email has been sent to
-          <span class="font-bold text-darkSlateGrey"
+          <span id="email-on-sub" class="font-bold text-darkSlateGrey"
             >ash@loremcompany.com.</span
           >
           Please open it and click the button inside to confirm your

@@ -607,6 +607,10 @@ video {
   margin-top: 2rem;
 }
 
+.mt-0{
+  margin-top: 0px;
+}
+
 .block{
   display: block;
 }
@@ -617,6 +621,15 @@ video {
 
 .hidden{
   display: none;
+}
+
+.h-fit{
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.h-full{
+  height: 100%;
 }
 
 .min-h-screen{
@@ -690,6 +703,10 @@ video {
   padding: 1.5rem;
 }
 
+.p-0{
+  padding: 0px;
+}
+
 .pl-4{
   padding-left: 1rem;
 }
@@ -741,6 +758,8 @@ video {
   border-color: hsl(4 100% 67% / var(--tw-border-opacity));
   --tw-bg-opacity: 1;
   background-color: rgb(254 226 226 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: hsl(4 100% 67% / var(--tw-text-opacity));
 }
 
 .error-email-outline::-moz-placeholder{
@@ -780,6 +799,10 @@ video {
     margin-bottom: 1.25rem;
   }
 
+  .md\:mr-5{
+    margin-right: 1.25rem;
+  }
+
   .md\:mt-0{
     margin-top: 0px;
   }
@@ -792,28 +815,16 @@ video {
     margin-top: 1.25rem;
   }
 
-  .md\:ml-5{
-    margin-left: 1.25rem;
-  }
-
-  .md\:ml-20{
-    margin-left: 5rem;
-  }
-
-  .md\:mr-20{
-    margin-right: 5rem;
-  }
-
-  .md\:mr-5{
-    margin-right: 1.25rem;
-  }
-
   .md\:block{
     display: block;
   }
 
   .md\:hidden{
     display: none;
+  }
+
+  .md\:min-h-screen{
+    min-height: 100vh;
   }
 
   .md\:w-\[95\%\]{

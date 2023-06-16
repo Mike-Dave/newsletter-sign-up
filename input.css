@@ -5,5 +5,5 @@
 @tailwind utilities;
 
 .error-email-outline {
-  @apply border-tomato placeholder:text-tomato bg-red-100;
+  @apply border-tomato text-tomato placeholder:text-tomato bg-red-100;
 }
